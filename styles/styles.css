@@ -1,0 +1,183 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+}
+
+.profile-img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.btn-primary {
+    background-color: white;
+    color: black;
+}
+
+.highlight {
+    display: flex;
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.sneaker {
+    border-radius: 25px;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.carousel-item img {
+    object-fit: contain;
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-container,
+#carousel2 .carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#carousel2 .carousel-container {
+    max-width: 400px;
+    height: 100%;
+}
+
+#carousel2 .carousel-item img {
+    width: 100%;
+    height: 800px;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #292626, #e64e4e, #ffffff);
+    background-size: 180% 180%;
+    animation: gradient-animation 9s ease infinite;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 10px;
+}
+
+.contact {
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-check-label {
+    color: #fff;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.content {
+    flex: 1;
+}
+
+#footer {
+    margin-top: auto;
+}
+
+.picto {
+    gap: 25px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Media Queries */
+.container {
+    width: 100%;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    .picto {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        height: 100px;
+    }
+
+    #carousel2 .carousel-item > img {
+      object-fit: contain;
+    }
+    #carousel1 .carousel-item > img {
+        object-fit: contain;
+    }
+    .picto {
+        display: flex;
+        flex-direction: column;
+    }
+}
